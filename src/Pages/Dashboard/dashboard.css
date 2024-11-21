@@ -1,0 +1,112 @@
+.content-flex {
+  display: flex;
+}
+
+.side-bar {
+  padding: 20px;
+  width: 20%;
+  height: 100vh;
+  border-right: 1px solid #e2dfdf;
+}
+@media (max-width: 767px) {
+  .side-bar {
+    padding: 20px;
+    width: 100%;
+    border-right: 1px solid transparent;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+    height: 160px;
+    align-items: center;
+  }
+  .content-flex {
+    flex-direction: column;
+  }
+}
+.shadow {
+  box-shadow: 1px 1px 10px 1px #cbc9c9;
+}
+.p-2 {
+  padding: 10px 0;
+}
+
+.item-link {
+  color: #1e3050;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  padding: 6px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+.item-link:hover {
+  background-color: #74afb9;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+}
+
+.users,
+.user {
+  color: #1e3050;
+  margin-right: 10px;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+.active {
+  background-color: #74afb9;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  color: #fff;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+}
+tr:nth-child(even) {
+  background-color: #f1f7f8;
+}
+th,
+td {
+  border: 1px solid #a0c8cf;
+  padding: 0.75rem;
+  text-align: center;
+}
+th {
+  color: #fff;
+  background-color: #74afb9;
+}
+td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.all-table {
+  border: 2px solid #e7e7e7;
+  width: 420px;
+  margin: 10px;
+  box-shadow: 0px 0px 1px #cac5c5;
+  border-radius: 6px;
+}
+@media (max-width: 767px) {
+  .table-100 {
+    width: 100% !important;
+  }
+}
